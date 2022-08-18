@@ -141,7 +141,7 @@ async function start() {
       <div
         class="text-l md:text-2xl bg-white font-bold text-center color p-1 mx-1 md:p-3 rounded-lg shadow-sm text-green-500"
       >
-        Player: {{ paddingZeros(current_player, 2) }} /
+        Prisoner: {{ paddingZeros(current_player, 2) }} /
         {{ players.length }}
       </div>
     </div>
@@ -152,7 +152,7 @@ async function start() {
       <div class="grid grid-cols-10 md:grid-cols-10 lg:grid-cols-10 gap-2 p-3">
         <div
           v-for="(b, i) in box"
-          class="transition ease-in-out box bg-green-100 text-l md:text-lg font-bold text-center p-[5px] md:p-3 rounded-lg cursor-pointer hover:ring-2 hover:ring-orange-500"
+          class="transition ease-in-out box bg-green-100 text-base md:text-lg font-bold text-center p-[5px] md:p-3 rounded-lg cursor-pointer hover:ring-2 hover:ring-orange-500"
           :class="[
             `${
               b.opened
