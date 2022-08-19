@@ -162,7 +162,7 @@ async function start() {
             { 'bg-yellow-300 text-red-500': b.number === last_opened },
             { flipped: b.opened },
           ]"
-          @click="openBox(i, b.number)"
+          @click="!started ? openBox(i, b.number) : ''"
         >
           <span v-if="!b.opened">
             {{ b.id }}
